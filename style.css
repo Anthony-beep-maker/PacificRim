@@ -1,0 +1,243 @@
+body{
+    background: linear-gradient(90deg, #301313, #000);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header{
+    position: relative;
+    background: rgb(255, 0, 0);
+    padding: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    align-items: center;
+}
+
+header h1{
+    text-transform: uppercase;
+    color: black;
+    font-size: 2.3em;
+    cursor: default;
+    padding: 0;
+    margin: 10px;
+}
+
+header h1 a{
+    text-transform: uppercase;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: .9em;
+    padding: 0;
+}
+
+header a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+header a:hover{
+    color: #242424;
+    text-decoration: underline;
+}
+
+.btn1{
+    margin-left: 30%;
+}
+
+header .ppimg{
+    width: 80px;
+}
+
+svg{
+    display: none;
+    cursor: pointer;
+}
+
+#mediaquerismenu{
+    display: none;
+}
+
+.menu-cb-phone{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    appearance: none;
+}
+
+/*contenu*/
+
+.contenu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banniere_container{
+    height: 100vh;
+    overflow: hidden;
+    background: url(https://sm.ign.com/t/ign_fr/news/n/netflixs-p/netflixs-pacific-rim-anime-is-coming-in-2020-confirmed-for-t_37j4.1280.jpg) center no-repeat;
+    background-size: cover;
+    transition: all 1s ease;
+    border-right: 2px solid black;
+    width: 100%;
+}
+
+.banniere_container2{
+    height: 100vh;
+    overflow: hidden;
+    background: url(https://cawettejones.com/wp-content/uploads/2021/04/striker-eureka-pacific-rim_pacific-rim_galler-6-e1619016597611.jpg) center no-repeat;
+    background-size: cover;
+    transition: all 1s ease;
+    border-right: 2px solid black;
+    width: 100%;
+}
+
+.banniere_container3{
+    height: 100vh;
+    overflow: hidden;
+    background: url(https://images.goodsmile.info/cgm/images/product/20160819/5879/40713/large/889fcad30ab555f91c2df88e31fdccbc.jpg) center no-repeat;
+    background-size: cover;
+    transition: all 1s ease;
+    width: 100%;
+}
+
+.banniere_container:hover, .banniere_container2:hover, .banniere_container3:hover{
+    width: 150%;
+}
+
+.banniere_container h1, .banniere_container2 h1, .banniere_container3 h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(41, 41, 41, 0.5);
+    margin-top: -1px;
+    padding: 70vh 0 100vh 0;
+    transition: all 1s ease;
+}
+
+h1 a{
+    color: white;
+    text-decoration: none;
+    transition: all .5s ease;
+    padding: 100px 0;
+    animation-name: mon_anim2;
+    animation-duration: 2000ms;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+h1 a:hover{
+    color: turquoise;
+}
+
+footer{
+    background: #301313;
+    padding: 1px;
+    color: white;
+    border-top: 2px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#Lasignificationdunom .pied p, #Lasignificationdunom .texte-description h1{
+    text-align: center;
+}
+
+.texte-description{
+    color: white;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+.texte-description p:hover{
+    color: yellow;
+}
+
+#Lasignificationdunom p{
+    text-align: justify;
+}
+
+.flotant{
+    float: left;
+    margin: 10px;
+    width: 10%;
+}
+
+strong{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+a{
+    color: aqua;
+}
+
+@media all and (max-width: 1000px) {
+    svg{
+        display: block;
+        width: 30px;
+        margin: 25px;
+    }
+
+    header h1 a, header h1{
+        margin-left: 10px;
+        display: block;
+    }
+
+    header a{
+        display: none;
+    }
+
+    header{
+        justify-content: space-between;
+        box-shadow: 0 0 10px black;
+    }
+
+    #mediaquerismenu{
+        display:flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, .8);
+        position: absolute;
+        width: 100%;
+        transform: translateY(-100%);
+        transition: all .3s cubic-bezier(0.65, 0.24, 0.55, 0.45);
+    }
+    #mediaquerismenu a{
+        padding: 10px;
+        border-bottom: 1px solid black;
+        color: #444444;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+    }
+
+    .menu-cb-phone:checked ~ #mediaquerismenu, .menu-cb-phone:checked ~ #mediaquerismenu a{
+        transform: translateY(0);
+    }
+
+    .contenu{
+        flex-direction: column;
+    }
+
+    .banniere_container, .banniere_container2, .banniere_container3{
+        height: 40vh;
+        overflow: hidden;
+        border-bottom: 1px solid black;
+    }
+
+    .banniere_container:hover, .banniere_container2:hover, .banniere_container3:hover{
+        width: 100%;
+    }
+
+    .banniere_container h1, .banniere_container2 h1, .banniere_container3 h1{
+        padding:25vh 0 100vh 0;
+    }
+
+    h1 a{
+        padding: 0;
+    }
+}
