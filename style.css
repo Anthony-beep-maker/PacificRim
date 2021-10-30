@@ -191,11 +191,16 @@ a{
     width: 150px;
     margin-bottom: 50px;
     margin: 20px;
+    transition: all .5s ease;
 }
 
 .in-tablau{
     width: 150px;
     border-radius: 10px 10px 0 0;
+}
+
+.acteurs-tablau a:hover{
+    box-shadow: 0 0 20px gray;
 }
 
 @media all and (max-width: 1000px) {
