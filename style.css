@@ -176,6 +176,28 @@ a{
     color: aqua;
 }
 
+.acteurs-tablau{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.acteurs-tablau a{
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin-bottom: 50px;
+    margin: 20px;
+}
+
+.in-tablau{
+    width: 150px;
+    border-radius: 10px 10px 0 0;
+}
+
 @media all and (max-width: 1000px) {
     svg{
         display: block;
@@ -239,5 +261,18 @@ a{
 
     h1 a{
         padding: 0;
+    }
+
+    .acteurs-tablau{
+        display: flex;
+        justify-content: center;
+    }
+
+    .acteurs-tablau a{
+        width: 200px;
+    }
+
+    .in-tablau{
+        width: 200px;
     }
 }
